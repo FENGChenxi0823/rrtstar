@@ -82,7 +82,7 @@ if __name__ == "__main__":
             plt.pause(0.01)  # Need for Mac
             plt.show()
         # Draw Found Path
-        '''
+        
         pathcolor=(1,0,0)
         handles=drawArmPath(env,robot,path,[pathcolor])
         # get trajectory
@@ -92,7 +92,7 @@ if __name__ == "__main__":
             traj.Insert(i,path[i][0:2])    
         planningutils.RetimeActiveDOFTrajectory(traj,robot)
         robot.GetController().SetPath(traj)
-        '''
+        
         ### END OF YOUR CODE ###
     waitrobot(robot)
 
